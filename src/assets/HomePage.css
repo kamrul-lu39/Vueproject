@@ -1,0 +1,394 @@
+/* Global styles */
+html , body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #4CAF50;
+  }
+  
+ /* Ensure the body and html take up the full height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('@/assets/blu.png'); /* Add your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+/* Tagline Style (Small Upper Title) */
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Title Style */
+.main-title {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Slogan or Subtitle Style */
+.slogan {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Text at the Bottom */
+.footer-text {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Overlay to Darken the Background */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Darken overlay */
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+ /* Divider Between Hero and About Section */
+.section-divider {
+  width: 100%;
+  height: 5px;
+  background-color: #fff; /* Dark divider */
+  
+}
+
+/* About Section Styling */
+.about-section {
+  background-image: url('@/assets/aboutBack.png'); /* Add your background image */
+  color: white;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.about-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.about-text h2.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-text h1.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-text p.description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-text p.footer-text {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image circular */
+  border: 8px solid #2c3e50; /* Optional: Add a border to the circle */
+}
+
+/* Optional Overlay to Darken Background for Better Readability */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Darken overlay */
+  z-index: -1; /* Keep overlay behind content */
+}
+
+.about-content {
+  z-index: 2; /* Ensure text is above background */
+}
+
+
+/* Vision Section Styling */
+.vision-section {
+  background-image: url('@/assets/visionbackbround.png'); /* Your provided background image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  min-height: 70vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.vision-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vision-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-image img {
+  width: 350px; /* Adjust size to fit well */
+  height: auto;
+  object-fit: contain;
+}
+
+.vision-text {
+  flex: 1;
+  padding-left: 50px;
+  color: #fff;
+}
+
+.vision-text h2.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.vision-text h1.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.vision-text p.description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.vision-text p.footer-text {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+}
+
+ /* Mission Section Styling */
+.mission-section {
+  background-image: url('@/assets/aboutBack.png'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  min-height: 70vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mission-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission-text {
+  flex: 1;
+  padding-right: 50px;
+  color: #fff;
+}
+
+.mission-text h2.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mission-text h1.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mission-text p.description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.mission-text p.footer-text {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mission-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-image img {
+  width: 400px; /* Adjust size to fit your design */
+  height: auto;
+  object-fit: contain;
+}
+
+  /* Contact Section */
+  .contact-section {
+    background-image: url('@/assets/aboutBack.png'); /* Your background image */
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer .social-links a:hover {
+    color: #4CAF50;
+  }
+  
